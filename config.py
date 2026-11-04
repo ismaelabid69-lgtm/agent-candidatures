@@ -22,7 +22,7 @@ NOM_PIECE_JOINTE = "CV.pdf"
 # Google Maps -> clic droit sur chez toi -> clique sur les deux nombres pour les copier.
 LATITUDE = 45.6975     # par défaut : centre de Vénissieux
 LONGITUDE = 4.8867
-RAYON_KM = 15
+RAYON_KM = 20
 
 # Codes NAF (activité officielle de l'entreprise) qui collent à un profil
 # technicien informatique et réseau. Mets un # devant une ligne pour l'ignorer.
