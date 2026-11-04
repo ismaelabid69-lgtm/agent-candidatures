@@ -1,0 +1,16 @@
+# Rien de personnel ni d'inutile dans l'image
+.env
+config_perso.py
+*.pdf
+*.csv
+donnees/
+.derniere_recherche
+.git/
+.github/
+tests/
+docs/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.bat

@@ -1,0 +1,15 @@
+# Données personnelles : ne JAMAIS les mettre sur GitHub
+.env
+config_perso.py
+cv.pdf
+*.pdf
+entreprises.csv
+donnees/
+.derniere_recherche
+
+# Fichiers générés
+__pycache__/
+*.pyc
+*.tmp
+.pytest_cache/
+.ruff_cache/

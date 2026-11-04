@@ -1,0 +1,63 @@
+# ============================================================================
+#  MODÈLE DU MAIL — modifie librement le texte.
+#
+#  Chaque section a plusieurs variantes séparées par une ligne "---".
+#  Pour chaque entreprise, le script choisit une variante de chaque section :
+#  deux entreprises ne reçoivent donc presque jamais exactement le même mail.
+#
+#  Mots remplacés automatiquement :
+#    {entreprise}  nom de l'entreprise        {ville}     sa ville
+#    {secteur}     ex : "du conseil informatique"
+#    {prenom} {nom} {telephone} {email} {linkedin}
+#    {types_contrat} {disponibilite}
+#
+#  Les lignes qui commencent par # sont ignorées.
+# ============================================================================
+
+[OBJETS]
+Candidature spontanée – Technicien informatique et réseau
+---
+Technicien informatique et réseaux disponible – {prenom} {nom}
+---
+Candidature technicien systèmes et réseaux – {entreprise}
+---
+Candidature spontanée chez {entreprise} – Technicien informatique & réseaux
+
+[SALUTATIONS]
+Madame, Monsieur,
+---
+Bonjour,
+
+[INTRODUCTIONS]
+Je me permets de vous contacter car {entreprise}, installée à {ville}, fait partie des entreprises {secteur} que j'aimerais rejoindre.
+---
+En cherchant les entreprises {secteur} proches de chez moi, j'ai découvert {entreprise} à {ville}, et je souhaite vous proposer ma candidature.
+---
+Je vous écris pour savoir si {entreprise} recherche en ce moment un technicien informatique et réseau.
+---
+Je m'intéresse beaucoup au monde {secteur}, et j'aimerais savoir si {entreprise} a besoin de renfort en informatique et réseaux.
+
+[CORPS]
+Après deux années de BTS CIEL (Cybersécurité, Informatique et réseaux, Électronique) à Vénissieux, je recherche un poste de technicien informatique et réseau. Je suis ouvert à tout type de contrat ({types_contrat}) et disponible {disponibilite}.
+
+J'ai déjà pratiqué l'installation et le dépannage de postes Windows et Linux, l'adressage IP, la configuration de switchs et de routeurs, ainsi que la virtualisation. J'ai été technicien informatique en alternance chez IBC à Vénissieux (support utilisateurs, maintenance et dépannage de postes, suivi des incidents), après un stage chez LDLC (diagnostic de pannes, installation de Windows, configuration de postes).
+
+[CONCLUSIONS]
+Je serais ravi d'échanger avec vous, par téléphone ou lors d'un entretien, selon vos disponibilités. Vous trouverez mon CV en pièce jointe.
+---
+Mon CV est en pièce jointe. Je reste disponible pour un appel ou un rendez-vous quand cela vous arrange.
+---
+Vous trouverez mon CV ci-joint. Je serais très content de pouvoir en discuter avec vous lors d'un entretien.
+
+[POLITESSES]
+Je vous remercie pour votre attention et vous souhaite une bonne journée.
+---
+Merci d'avance pour votre réponse, et bonne journée.
+---
+Dans l'attente de votre retour, je vous adresse mes salutations distinguées.
+
+[SIGNATURE]
+{prenom} {nom}
+{telephone}
+{email}
+{linkedin}

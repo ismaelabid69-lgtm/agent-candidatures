@@ -1,0 +1,16 @@
+services:
+  agent:
+    build: .
+    image: agent-candidatures:latest
+    container_name: agent-candidatures
+    restart: unless-stopped          # redémarre tout seul (après un reboot du PC, un crash…)
+    ports:
+      - "127.0.0.1:8000:8000"        # API accessible seulement depuis ton PC
+    env_file: .env                   # GMAIL_ADRESSE et GMAIL_MOT_DE_PASSE_APP
+    environment:
+      TZ: Europe/Paris
+    volumes:
+      - ./donnees:/data                                   # CSV + CV : gardés même si on supprime le conteneur
+      - ./config.py:/app/config.py:ro                     # tes réglages (lecture seule)
+      - ./config_perso.py:/app/config_perso.py:ro         # ton nom / téléphone
+      - ./modele_mail.txt:/app/modele_mail.txt:ro         # le texte du mail
