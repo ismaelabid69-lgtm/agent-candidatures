@@ -1,6 +1,6 @@
 # Agent de candidatures automatiques
 
-![CI](https://github.com/TON_PSEUDO/agent-candidatures/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/ismaelabid69-lgtm/agent-candidatures/actions/workflows/ci.yml/badge.svg)
 
 Un agent Python qui trouve les entreprises informatiques, télécoms et hôpitaux à moins de 15 km de chez moi, cherche leur adresse mail de contact, puis leur envoie une candidature spontanée personnalisée avec mon CV (20 par jour maximum, une seule fois par entreprise).
 
